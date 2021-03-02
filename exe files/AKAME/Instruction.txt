@@ -1,0 +1,3 @@
+bit 64 C:\Windows\SysWOW64\drivers
+
+bit 32 C:\Windows\System32\drivers
