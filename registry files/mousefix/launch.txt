@@ -1,0 +1,4 @@
+// LAUNCH OPTIONS COUNTER-STRIKE 1.6
+m_mousethread_sleep "1" - 144/210 monitor Hz
+m_mousethread_sleep "2" - 75 monitor Hz
+m_mousethread_sleep "10" - 60 monitor Hz
