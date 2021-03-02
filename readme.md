@@ -7,7 +7,7 @@ This repository contains every counter-strike 1.6 private/public cheats availabl
 
 Sure not. I am not **responsible** if you get get banned by VAC, sXe, myac, gameguard or whatever anticheat bans you.
 
-Here's a trick. If you want to cheat on public gameservers, just write in launch options -insecure. This disable VAC and you can use the cheats without stress.
+Here's a trick. If you want to cheat on public gameservers, just write in launch options -insecure. This disable VAC and you can use the cheats without stress just on VAC.
 
 ## VIRUS!!!! wyd.
 
