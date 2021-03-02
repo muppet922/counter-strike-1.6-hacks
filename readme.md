@@ -7,6 +7,8 @@ This repository contains every counter-strike 1.6 private/public cheats availabl
 
 Sure not, well most of the cheats available here are undetected. Anyway, don't use them if you don't know how to use them. It's not my fault if you get VAC banned, banned on myac, sXe, gameguard of whatever anticheat bans you. **I AM NOT REPONSIBLE FOR YOUR ACTIONS**
 
+Here's a short trick if you want to use them on public gameservers. Just write in launch options -insecure, this disables VAC and most of public gameservers are using dproto so players with cracked versions of this game are allowed to play. They are not scanned by VAC so they don't have VAC PROTECTION, neither you with -insecure option.
+
 ## VIRUS!!!! wyd.
 
 Indeed, some of the .exe files triggers your anti-virus with a false-positive announce. Nothing to worry about. But in time, depends of time every cheat available here will come with a virustotal scan, or you just cand run it find in a sandbox enviroment.
