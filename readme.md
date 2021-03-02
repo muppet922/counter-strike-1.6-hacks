@@ -5,12 +5,13 @@ This repository contains every counter-strike 1.6 private/public cheats availabl
 
 ## Who's responsible for my VACaction? I am safe?
 
-Sure not, well most of the cheats available here are undetected. Anyway, don't use them if you don't know how to use them. It's not my fault if you get VAC banned, banned on myac, sXe, gameguard of whatever anticheat bans you. **I AM NOT REPONSIBLE FOR YOUR ACTIONS**
+Sure not. I am not **responsible** if you get get banned by VAC, sXe, myac, gameguard or whatever anticheat bans you.
 
-Here's a short trick if you want to use them on public gameservers. Just write in launch options -insecure, this disables VAC and most of public gameservers are using dproto so players with cracked versions of this game are allowed to play. They are not scanned by VAC so they don't have VAC PROTECTION, neither you with -insecure option.
+Here's a trick. If you want to cheat on public gameservers, just write in launch options -insecure. This disable VAC and you can use the cheats without stress.
 
 ## VIRUS!!!! wyd.
 
-Indeed, some of the .exe files triggers your anti-virus with a false-positive announce. Nothing to worry about. But in time, depends of time every cheat available here will come with a virustotal scan, or you just cand run it find in a sandbox enviroment.
+Indeed, russian spy's everywhere. Some of the .exe (if not all) triggers your anti-virus. It's a false-positive announce, nothing to worry about. If you are really paranoid, use sandbox and virustotal, or any methods available.
 
-Althought, config files, models and sound files are the most safe files to use.
+
+Althought, models, config files, sound files, rc files are 99% clean, if they don't use C++, but also the rest of 1% is a false-positive.
