@@ -1,0 +1,32 @@
+Nick: Wastey 
+Team: Time Factor
+Resolution: 640x480
+DPI 400
+1000 hz
+5/11 windows
+1.9 cs
+
+SteelSeries Sensei Settings:
+CPI 1: 400
+CPI 2: 400
+EXACTLIFT: 25%
+EXACACCEL: 0
+EXACAIM: 0
+FREEMOVE: 0
+1000 Hz
+
+Launch Settings Steam:
+noforcemaccel -noforcemspd -noforcemparms -refresh 100 -freq 100 -nofbo -nomsaa
+
+Mouse: SteelSeries Sensei
+Mousepad: SteelSeries NP+
+Keyboard: SteelSeries 7G
+HeadSet: SteelSeries Siberia V2 USB Black
+
+Visit:
+vk.com/id88354638
+Vk.com/WasteyTV
+YouTube.com/c/WasteyTV
+YouTube.com/channel/UCs7PEaI6eGsegTx7rVUSMpA
+steamcommunity.com/id/WasteyER
+steamcommunity.com/id/Wasteyz0r

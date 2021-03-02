@@ -1,0 +1,1 @@
+-noipx -dxlevel 90 -noaafonts -nomsaa -noforcemparms -refresh 100

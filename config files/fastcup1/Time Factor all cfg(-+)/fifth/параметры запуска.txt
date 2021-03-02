@@ -1,0 +1,1 @@
+-noforcemspd -noforcemaccel -noforcemparms -freq 75 -w 800 -nofbo +gl_vsync 0 +gl_ansio 0 +ex_interp 0.01 +fps_override 1 -heapsize 1048576

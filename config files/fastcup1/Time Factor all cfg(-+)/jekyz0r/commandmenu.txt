@@ -1,0 +1,236 @@
+"*" "WEAPON MODE FOR NOMORE BY trans967"
+		{ 
+			"*" "USP"      	         "exec TRANS967/set_usp.cfg"
+			"*" "GLOCK"       	 "exec TRANS967/set_glock.cfg"
+			"*" "DEAGLE"     	 "exec TRANS967/set_deagle.cfg"
+			"*" "AK-47"              "exec TRANS967/set_ak47.cfg"
+			"*" "M4A1"         	 "exec TRANS967/set_m4a1.cfg"
+			"*" "FAMAS"    	         "exec TRANS967/set_famas.cfg"
+                        "*" "GALIL"              "exec TRANS967/set_galil.cfg"
+                }
+}
+"*" "VIDEO MODE NOMORE"
+               {
+                        "*" "ATI"                "exec TRANS967/set_ati.cfg"
+                        "*" "NVIDIA"             "exec TRANS967/set_nvidia.cfg"
+               }
+}
+
+"*" "SET: NOMORE"
+{
+	"*" "WEAPON ALIGNMENT"
+	{
+		"*" "RIGHT"  	 		 		"cl_righthand 1"
+		"*" "LEFT"  	 		 		"cl_righthand 0"
+		"*" "BOTH"  	 		 		"cl_righthand -1"
+	}
+	"*" "AUTO WEAPON SWITCH"
+	{
+		"*" "ON" 	 		 		"setinfo _cl_autowepswitch 1"
+		"*" "OFF" 	 		 		"setinfo _cl_autowepswitch 0"
+	}
+	"*" "HUD FASTSWITCH"
+	{
+		"*" "ON"			 			"hud_fastswitch 1"
+		"*" "OFF"			 			"hud_fastswitch 0"
+	}
+}
+"*" "MEDIA"
+{
+	"*" "DEMO RECORDING"
+	{
+	                            MAP de_dust2						"*" "RECORD DEMO" 
+				{
+				TEAM1 "*" "DUST2: TR"				"stop;record demos/dust2-tr;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - DUST2 - T"
+				TEAM2 "*" "DUST2: CT"				"stop;record demos/dust2-ct;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - DUST2 - CT"
+				}
+	                            MAP de_inferno						"*" "RECORD DEMO" 
+				{
+				TEAM1 "*" "INFERNO: TR"				"stop;record demos/inferno-tr;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - INFERNO - T"
+				TEAM2 "*" "INFERNO: CT"				"stop;record demos/inferno-ct;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - INFERNO - CT"
+				}
+	                            MAP de_mirage						"*" "RECORD DEMO" 
+				{
+				TEAM1 "*" "MIRAGE: TR"				"stop;record demos/mirage-tr;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - MIRAGE - T"
+				TEAM2 "*" "MIRAGE: CT"				"stop;record demos/mirage-ct;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - MIRAGE - CT"
+				}
+	                            MAP de_nuke						"*" "RECORD DEMO" 
+				{
+				TEAM1 "*" "NUKE: TR"				"stop;record demos/nuke-tr;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - NUKE - T"
+				TEAM2 "*" "NUKE: CT"				"stop;record demos/nuke-ct;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - NUKE - CT"
+				}
+	                            MAP de_train						"*" "RECORD DEMO" 
+				{
+				TEAM1 "*" "TRAIN: TR"				"stop;record demos/train-tr;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - TRAIN - T"
+				TEAM2 "*" "TRAIN: CT"				"stop;record demos/train-ct;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - TRAIN - CT"
+				}
+	                            MAP de_tuscan						"*" "RECORD DEMO" 
+				{
+				TEAM1 "*" "TUSCAN: TR"				"stop;record demos/tuscan-tr;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - TUSCAN - T"
+				TEAM2 "*" "TUSCAN: CT"				"stop;record demos/tuscan-ct;echo Recording POV demo to: demos/ folder.;say_team Recording POV demo - TUSCAN - CT"
+				}
+				"*" "RECORD MANUALY"  				"messagemode record;say_team Recording POV demo."
+				"*" "STOP DEMO" 					"stop;say_team Recording POV Demo Stopped."
+	}
+	"*" "TAKE SCREENSHOTS"
+	{
+		"*" "SCREENSHOT: SIMPLE"           					"w;snapshot;w"
+		"*" "SCREENSHOT: CONSOLE"           					"w;toggleconsole;w;snapshot;w;cancelselect;w"
+		"*" "SCREENSHOT: SCOREBOARD"  					"w;+showscores;w;snapshot;w;-showscores;w"
+		"*" "SCREENSHOT: GRAPH/SCORE"   					"w;net_graph 3;+showscores;w;snapshot;w;-showscores;net_graph 0;w"
+		"*" "SCREENSHOT: STATUS"          					"w;toggleconsole;w;clear;status;w;listplayers;w;stats;w;snapshot;w;toggleconsole;w;cancelselect;w"
+		"*" "SCREENSHOT: RCON STATUS"   					"w;toggleconsole;clear;rcon status;w;snapshot;w;cancelselect;w"
+	}
+	"*" "SHOW STATISTICS"                                                                 
+	{
+		"*" "SHOW: PLAYERS"                      					"toggleconsole;listplayers"
+		"*" "SHOW: STATS"                          					"toggleconsole;stats"
+		"*" "SHOW: STATUS"                        					"toggleconsole;status"
+	}
+            	"*" "SAVE ALL INFO"							"exec save/misc/saves/stats.cfg"
+	"*" "SHOW REMAINING TIME" 						"timeleft"
+	CUSTOM "*" "SHOW MAP BRIEFING"						"!MAPBRIEFING"
+}
+"*" "SET: MISC"
+{
+	"*" "BOOST"
+		{
+		"*" "BOOST: ON" 							"exec save/misc/boost/on.cfg"
+		"*" "BOOST: OFF" 							"exec save/misc/boost/off.cfg"
+		}
+	"*" "MODELS"
+		{
+		"*" "MINMODELS: ON" 						"cl_minmodels 1"
+		"*" "MINMODELS: OFF" 						"cl_minmodels 0"
+		}
+	"*" "VGUI"
+		{	
+		"*" "VGUI/CLASSIC MENU: ON"				 	"setinfo _vgui_menus 1"
+		"*" "VGUI/CLASSIC MENU: OFF"   				 	"setinfo _vgui_menus 0"
+		}
+	"*" "HELP"
+		{
+		"1" "AUTO HELP: ON" 						"setinfo _ah 1"
+		"2" "AUTO HELP: OFF" 						"setinfo _ah 0"
+		}	
+	"*" "RADAR"
+		{
+		"*" "RADAR TYPE: SOLID"				 		"cl_radartype 1"
+		"*" "RADAR TYPE: TRANSPARENT"				 	"cl_radartype 0"
+		}
+	"*" "CENTER ID"
+		{
+		"*" "CENTER ID: ON" 				 		"hud_centerid 1"
+		"*" "CENTER ID: OFF" 				 		"hud_centerid 0"
+		}
+	"*" "TEXTURES"
+		{
+		"*" "HQ DETAIL TEXTURES: ON" 					"r_detailtextures 1"
+		"*" "HQ DETAIL TEXTURES: OFF" 					"r_detailtextures 0"
+		}
+}
+"*" "SET: SENSITIVITY"
+{
+	"*" "ZOOM"
+		{
+		"*" "ZOOM: SET" 				 			"messagemode zoom_sensitivity_ratio"
+		"*" "ZOOM: 1.0" 				 			"zoom_sensitivity_ratio 1.00000"
+		"*" "ZOOM: 1.2" 			 				"zoom_sensitivity_ratio 1.20000"
+		"*" "ZOOM: 1.4" 				 			"zoom_sensitivity_ratio 1.40000"
+		"*" "ZOOM: 1.6" 				 			"zoom_sensitivity_ratio 1.60000"
+		"*" "ZOOM: 1.8" 				 			"zoom_sensitivity_ratio 1.80000"
+		}
+	"*" "MOUSE"
+		{
+		"*" "MOUSE: SET" 				 			"messagemode sensitivity"
+		"*" "MOUSE: 2.0" 				 			"sensitivity 2.00000"
+		"*" "MOUSE: 2.5" 				 			"sensitivity 2.50000"
+		"*" "MOUSE: 3.0" 				 			"sensitivity 3.00000"
+		"*" "MOUSE: 3.5" 				 			"sensitivity 3.50000"
+		"*" "MOUSE: 4.0" 				 			"sensitivity 4.00000"
+		}
+}
+"*" "SET: CROSSHAIR"
+{
+	"*" "X COLOR"
+		{
+		"*" "COLORS: CUSTOM"
+			{
+			"*" "AQUA"                     				"exec save/crosshair/aqua.cfg"
+			"*" "BLACK"                     			"exec save/crosshair/black.cfg"
+			"*" "PINK"                     				"exec save/crosshair/pink.cfg"
+			"*" "PURPLE"                     			"exec save/crosshair/purple.cfg"
+			"*" "WHITE"			 			"exec save/crosshair/white.cfg"	
+			}
+		"*" "COLORS: TRANSLUCENT"
+			{
+			"*" "GREEN" 			 			"adjust_crosshair 0"
+			"*" "RED" 				 		"adjust_crosshair 1"
+			"*" "BLUE" 			 			"adjust_crosshair 2"
+			"*" "YELLOW" 			 			"adjust_crosshair 3"
+			"*" "AQUA" 			 			"adjust_crosshair 4"
+			}
+		"*" "COLORS: SOLID"
+			{
+			"*" "GREEN" 			 			"adjust_crosshair 5"
+			"*" "RED" 				 		"adjust_crosshair 6"
+			"*" "BLUE" 						"adjust_crosshair 7"
+			"*" "YELLOW" 			 			"adjust_crosshair 8"
+			"*" "AQUA" 			 			"adjust_crosshair 9"
+			}	
+		}
+	"*" "X SIZE"
+		{
+		"*" "CROSSHAIR SIZE: SMALL"					"cl_crosshair_size 1"
+		"*" "CROSSHAIR SIZE: MEDIUM"					"cl_crosshair_size 2"
+		"*" "CROSSHAIR SIZE: LARGE"				 	"cl_crosshair_size 3"
+		}
+	"*" "X DYNAMIC"
+		{
+		"*" "DYNAMIC CROSSHAIR: ON" 		 			"cl_dynamiccrosshair 1"
+		"*" "DYNAMIC CROSSHAIR: OFF" 		 			"cl_dynamiccrosshair 0"
+		}
+	"*" "X TRANSLUCENT"
+		{
+		"*" "CROSSHAIR TRANSLUCENT: ON" 			 	"cl_crosshair_translucent 1"
+		"*" "CROSSHAIR TRANSLUCENT: OFF" 			 	"cl_crosshair_translucent 0"
+		}
+	"*" "X ON/OFF"
+		{
+		"*" "CROSSHAIR: ON" 			 			"cl_crosshair_color 255;cl_crosshair_translucent 0"
+		"*" "CROSSHAIR: OFF" 			 			"cl_crosshair_color 0;cl_crosshair_translucent 1"
+		}
+	"*" "X RANDOM" 			 					"adjust_crosshair"
+}
+"*" "SET: CONSOLE"
+{
+	"*" "CHAT COLORS"
+		{
+		"*" "COLORS:" 
+			{
+			"*" "DEFAULT" 		 				"exec save/chat/default.cfg"
+			"*" "BLACK" 		 				"exec save/chat/black.cfg"
+			"*" "WHITE" 		 				"exec save/chat/white.cfg"
+			"*" "YELLOW" 		 				"exec save/chat/yellow.cfg"
+			"*" "NIGHT" 		 				"exec save/chat/night.cfg"
+			}
+		"*" "COLORS:" 
+			{
+			"*" "BLOOD" 		 				"exec save/chat/blood.cfg"
+			"*" "GREEN" 		 				"exec save/chat/green.cfg"
+			"*" "ORANGE" 		 				"exec save/chat/orange.cfg"
+			"*" "PURPLE" 		 				"exec save/chat/purple.cfg"
+			"*" "AQUA" 		 				"exec save/chat/aqua.cfg"
+			}	
+		}
+	"*" "CHAT TEXT"
+		{
+		"*" "TEXT: ON" 							"hud_saytext 1"
+		"*" "TEXT: OFF" 						"hud_saytext 0"
+		}
+	"*" "MESSEGES: SAVE"							"condump"
+	"*" "MESSEGES: CLEAN"							"clear"
+}     
+"*" "CHANGE TEAM" 								"chooseteam"
+"*" "CHANGE NAME" 								"messagemode name"
+"*" "CLOSE" 									"slot10"
